@@ -1,0 +1,75 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #f80c0c;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav {
+     ul {
+        color: aqua;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+  
+     li { display: inline-block; color: aqua;}
+  
+     a {
+        color: aqua;
+        display: block;
+         padding: 6px 12px;
+        text-decoration: none;
+    }
+  }
+
+
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+.box {
+   @include border-radius(10px);
+}
+
+
+//style.css
+.box {
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+            border-radius: 10px;
+}
+
+// style.scss
+%equal-heights { // шаблонный селектор
+    height: 100%;
+}
+
+%message { // шаблонный селектор
+    padding: 10px;
+}
+
+.success {
+  @extend %message; color: green;
+}
+
+.error {
+  @extend %message; color: red;
+}
+
+// style.css
+.success, .error {
+    padding: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

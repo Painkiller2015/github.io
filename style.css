@@ -1,0 +1,53 @@
+/* body {
+  font: 100% Helvetica, sans-serif;
+  color: #f80c0c;
+} */
+
+nav ul {
+  color: aqua;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  color: aqua;
+}
+nav a {
+  color: aqua;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+.error, .success {
+  padding: 10px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.success, .error {
+  padding: 10px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
